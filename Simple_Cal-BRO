@@ -41,7 +41,7 @@ def calculate_cal():
     fig = Figure()
     ax = fig.add_subplot(111)
 
-    ax.pie(nutrition_value, radius= 1, labels= nutrition_list, autopct='%0.2f%%', shadow= True)
+    ax.pie(nutrition_value, radius=1, labels= nutrition_list, autopct='%0.2f%%', shadow= True)
 
     Label(sec_window, text = '--- ROTEIN: '+ str(protein * 4) + ' CAL ---''\n--- FAT\'S: '+str(fat * 9) +' CAL ---''\n--- CARB\'S: ' + str(carbs * 4) + ' CAL --- ''\n--- TOTAL CALORIES: '  + str(total) + ' CAL ---').pack()
 
@@ -60,10 +60,10 @@ window.geometry()
 
 Label(window, text="--- ! MAKE SOME GAINS ! ---").grid(row=0, column = 1)
 
-Label(window, text = 'PROTEIN').grid(row=1)
-Label(window, text = 'FAT').grid(row=2)
-Label(window, text = 'CARBS').grid(row=3)
-Label(window, text = 'WEIGHT').grid(row=4)
+Label(window, text = 'PROTEIN (gr)').grid(row=1)
+Label(window, text = 'FAT (gr)').grid(row=2)
+Label(window, text = 'CARBS (gr)').grid(row=3)
+Label(window, text = 'WEIGHT (lb)').grid(row=4)
 
 protein_in = Entry(window)
 protein_in.grid(row=1, column = 1)
